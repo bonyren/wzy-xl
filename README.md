@@ -2,9 +2,10 @@
 
  **SAAS平台网址[https://www.wzyer.com](https://www.wzyer.com)，注册一个账号，就创建自己的线上心理咨询室，功能涵盖心理量表、心理测评、心理普查、心理咨询等功能。和微信生态打通，轻松和自己的微信公众号集成，同时提供微信小程序，第三方社交电商平台集成（抖音，小红书，淘宝等）,一体机大屏测评等功能，助力您在心理健康领域的创业。**
 
- **支持独立私有化部署，7x24小时技术保障支持，体验网址[http://sa.wzyer.com](http://sa.wzyer.com)** 
+ **项目开源，支持独立私有化部署，7x24小时技术保障支持，体验网址[http://sa.wzyer.com](http://sa.wzyer.com)** 
+ 从[https://github.com/bonyren/wzy-xl/tree/master/独立部署源代码](https://github.com/bonyren/wzy-xl/tree/master/独立部署源代码) 下载源代码。请参考[独立部署源代码指南](https://github.com/bonyren/wzy-xl/blob/master/%E7%8B%AC%E7%AB%8B%E9%83%A8%E7%BD%B2%E6%BA%90%E4%BB%A3%E7%A0%81%E6%8C%87%E5%8D%97.md)。
  
- **更多需求，请联系我们，微信：wzyer_com**
+ **需要协助，请联系我们，微信：wzyer_com**
 
  **系统介绍和功能展示视频 [点击查看](https://space.bilibili.com/1704374357/channel/seriesdetail?sid=3652047)** 
  
@@ -30,7 +31,10 @@
 ### 管理员端预览
 ![管理员端预览](https://foruda.gitee.com/images/1693447256478945071/b25d740b_10482337.png "管理员端预览")
 
-
+### 移动端扫码体验
+![微信公众号H5体验](https://foruda.gitee.com/images/1760521133984071374/b8cfb1da_10482337.png "微信公众号H5.png")
+![微信小程序体验](https://foruda.gitee.com/images/1760521166506071947/2cc8d1cb_10482337.png "微信小程序二维码.png")
+![百度小程序体验](https://foruda.gitee.com/images/1760521184345853526/669e132f_10482337.png "百度小程序二维码.png")
 ### 用户移动端预览
 #### 移动端咨询室首页
 ![移动端咨询室首页](https://foruda.gitee.com/images/1720001351662927242/ce4b4d83_10482337.jpeg "移动端咨询室首页")
