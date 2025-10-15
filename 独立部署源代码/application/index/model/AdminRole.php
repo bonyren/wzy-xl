@@ -1,0 +1,2 @@
+<?php
+ namespace app\index\model; class AdminRole extends Base { protected $pk = "\x72\157\x6c\x65\137\x69\x64"; protected $table = "\x61\x64\x6d\151\x6e\137\x72\157\154\145"; protected static $audit_fields = array("\162\x6f\154\145\x5f\156\141\x6d\145" => "\350\247\x92\xe8\x89\262\345\x90\215\347\247\xb0", "\144\145\x73\x63\162\x69\160\164\x69\157\x6e" => "\xe8\247\222\350\x89\xb2\xe6\x8f\x8f\350\xbf\xb0"); }

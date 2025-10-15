@@ -1,0 +1,2 @@
+<?php
+ namespace app\mp\logic; use think\Debug; use think\Db; use think\Log; use think\Request; use think\Session; use app\index\logic\Defs; class Customer extends Base { public function getInfos($customerId) { goto wJHPs; AlHvu: if ($infos) { goto uKWME; } goto Bsbao; jvu0Z: uKWME: goto pZLiT; pZLiT: return $infos; goto Cqdg3; wJHPs: $infos = Db::table("\143\x75\163\x74\157\x6d\x65\162")->where("\x69\144", $customerId)->field(true)->find(); goto AlHvu; Bsbao: return false; goto jvu0Z; Cqdg3: } }

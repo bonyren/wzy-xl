@@ -1,0 +1,52 @@
+<scroll-view class="detail_wrapper" scroll-y hidden="{{!uiDataReady}}">
+	<scroll-view scroll-y enable-flex class="detail_body">
+		<view>
+			<image src="{{subjectData.banner_img}}" class="detail_image"></image>
+		</view>
+		<view class="detail_title">
+			{{subjectData.name}}
+		</view>
+		<view class="detail_subtitle">
+			{{subjectData.subtitle}}
+		</view>
+		<view class="detail_price">
+			<text wx:if="{{subjectData.current_price==0}}" class="badge badge-success">免费</text>
+			<text wx:if="{{subjectData.current_price!=0}}">¥ {{subjectData.current_price}}</text>
+		</view>
+		<view class="detail_tags">
+			<view class="text-center">
+				<t-tag class="detail_tag" variant="light" theme="success">
+					{{subjectData.items + '道题目'}}
+				</t-tag>
+				<t-tag class="detail_tag" variant="light" theme="primary">
+					{{subjectData.participants + '人已测'}}
+				</t-tag>
+			</view>
+		</view>
+		<view class="section-title">测 量 说 明</view>
+		<view class="detail_desc">
+			<rich-text nodes="{{subjectData.subject_desc}}"></rich-text>
+		</view>
+		<view class="section-title">团 队 介 绍</view>
+		<view class="detail_team">
+			<rich-text nodes="{{subjectData.team_brief}}"></rich-text>
+		</view>
+	</scroll-view>
+</scroll-view>
+<view class="detail_footer" hidden="{{!uiDataReady}}">
+  <view class="home">
+    <button catchtap="onHome" plain type="default">
+      <t-icon name="home" size="36rpx" /><text>首页</text>
+    </button>
+  </view>
+  <view class="report" wx:if="{{subjectData.report_demo_images.length != 0}}">
+    <button catchtap="onReportDemo" plain type="default">
+      <t-icon name="file-1" size="36rpx" /><text>报告示例</text>
+    </button>
+  </view>
+  <view class="test">
+	  <button catchtap="onTestBegin">{{subjectData.order_no?'继 续 测 量':'立 即 测 量'}}</button>
+  </view>
+</view>
+<t-image-viewer closeBtn showIndex visible="{{reportDemoImagesVisible}}" images="{{subjectData.report_demo_images}}" bind:close="onReportDemoImagesClose">
+</t-image-viewer>

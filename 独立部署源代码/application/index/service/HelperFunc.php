@@ -1,0 +1,2 @@
+<?php
+ namespace app\index\service; use think\Request; use think\Log; use think\Debug; class HelperFunc { public static function hostName() { $hostName = request()->server("\x48\x54\124\120\137\x48\117\x53\124"); return $hostName; } public static function siteUrlRoot() { goto x_ndV; x_ndV: $hostName = HelperFunc::hostName(); goto pG4_B; Gkak1: return $urlPrefix; goto s0sJ6; pG4_B: $urlPrefix = SCHEMA . "\x3a\57\57" . $hostName; goto Gkak1; s0sJ6: } }

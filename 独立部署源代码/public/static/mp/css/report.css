@@ -1,0 +1,245 @@
+/* report start */
+/***************************************************************************************************************/
+.report_wrapper{
+    width: 100%;
+    background: url(../img/add.png) repeat;
+    background-size: 1.45rem 1.45rem;
+    padding-bottom: 1rem;
+  }
+  .report_wrapper_nobg{
+    background-image: none;
+  }
+  .report_wrapper div:last-child{
+    margin-bottom: 0;
+  }
+
+  .report_wrapper .user{
+    width: 92%;
+    height: 7.0rem;
+    border-radius: 0.2rem;
+    border: 1px solid #ededed;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    padding-top: 3.25rem;
+    color: #333;
+    margin: 0 auto;
+    margin-bottom: 0.75rem;
+  }
+  .report_wrapper .user img{
+    width: 4.7rem;
+    height: 4.7rem;
+    position: absolute;
+    top: -2.35rem;
+    left: 50%;
+    margin-left: -2.35rem;
+    border-radius: 50%;
+  }
+  .report_wrapper .user h3{
+    line-height: 1.4rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+  }
+  .report_wrapper .user p{
+    line-height: 0.85rem;
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  .report_wrapper .user_fullbox{
+    width: 100%;
+    height: 10.75rem;
+    border: none;
+    padding-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    border: none;
+    border-radius: 0;
+  }
+  .report_wrapper .user_fullbox img{
+    position: static;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.75rem;
+  }
+  .report_wrapper .user_fullbox h3{
+    font-size: 1.0rem;
+    line-height: 1.4rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  .report_wrapper .user_color{
+    background-color: #7ACCB1;
+  }
+  .report_wrapper .user_color p,
+  .report_wrapper .user_color h3{
+    color: #fff;
+  }
+
+  .report_wrapper h3{
+    font-size:  1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0.6rem 0;
+    color: #333;
+  }
+  /************************************************************************************************************/
+  .full_box{
+    width: 92%;
+    height: auto;
+    color: #666;
+    padding: 1.0rem 0.75rem 0.5rem 0.75rem;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.0rem;
+  }
+  .full_box h3.score{
+    line-height: 1.1rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    color: #333;
+  }
+  .full_box h3.score span{
+    color: #7BCC7A;
+  }
+  .full_box h5.theme_color_light{
+    line-height: 1.2rem;
+    margin-bottom: 1.0rem;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #7BCC7A;
+  }
+  
+  .full_box p{
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+  }
+
+  .full_box h1{
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  .full_box h3{
+    line-height: 1.05rem;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  .full_box::before{
+    left: 1.75rem;
+  }
+  .full_box::after{
+    right: 1.75rem;
+  }
+  /**************************************************************************************************/
+  .margin_box{
+    width: 92%;
+    height: auto;
+    line-height: 1rem;
+    padding: 1.0rem 0.75rem;
+    font-size: 0.7rem;
+    color: #666;
+    margin: 0 auto;
+    margin-bottom: 0.75rem;
+    border-radius: 0.2rem;
+    border: 1px solid #ededed;
+    background-color: #fff;
+  }
+  .margin_box img{
+    width: 40%;
+    height: auto;
+    margin: 0.75rem auto;
+    display: block;
+  }
+  .margin_box h3,h5{
+    font-size:  0.9rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0.6rem 0;
+    color: #333;
+  }
+  .margin_box p{
+    line-height:  1.2rem;
+    font-size:  0.8rem;
+    text-indent: 2em;
+    color: #666;
+    margin-bottom: 0.75rem;
+  }
+  /**************************************************************************************************/
+  .audio_box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 4.5rem;
+    border: 1px solid #E6E6E6;
+    border-radius: 0.2rem;
+    margin-bottom: 1.25rem;
+    padding: 1.0rem 0.75rem;
+  }
+  .audio_box audio{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .audio_box .left{
+    flex: 0 0 2.4rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 0.75rem;
+  }
+  .audio_box .left .play{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/icons/play.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .audio_box .left .play.pause{
+    background: url(../img/icons/pause.png) no-repeat center center;
+    background-size: 85% 85%;
+  }
+  .audio_box .right{
+    flex: 1;
+  }
+  .audio_box .right .name{
+    line-height: 0.9rem;
+    font-size: 0.65rem;
+    color: #333;
+    margin-bottom: 0.4rem;
+  }
+  .audio_box .right .progress_wrapper{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #E6E6E6;
+    margin-bottom: 0.4rem;
+    overflow: hidden;
+  }
+  .audio_box .right .progress_wrapper .progress{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #7ACCB1;
+  }
+  .audio_box .right .time{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    font-size: 0.5rem;
+    color: #666;
+  }
+  /*******************************************************************/
+  /* report end */

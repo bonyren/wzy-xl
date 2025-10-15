@@ -1,0 +1,58 @@
+.my-order-tabs{
+	--td-tab-item-tag-active-bg: #ddf1ea;
+	--td-tab-item-active-color: #000;
+}
+.my-order{
+	height: 100%;
+}
+.my-order-top {
+	height: 250rpx;
+	z-index: 9999;
+	background-color: #f8fafc;
+}
+.my-order-top .my-order-user{
+	height: 150rpx;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: #ddf1ea;
+}
+.my-order-top .my-order-user .avatar{
+	display: flex;
+	justify-content: center;
+	margin: 0 0;
+	padding: 0 0;
+	width: 120rpx;
+	text-align: center;
+	background-color: #ddf1ea;
+}
+.my-order-top .my-order-user .nickname{
+	margin-left: 10rpx;
+	width: 420rpx;
+}
+.my-order-top .my-order-user .exit-btn{
+	display: inline-block;
+	margin: 0 10rpx;
+	width: 160rpx;
+	font-size: 30rpx;
+}
+.my-subject-container {
+	height: calc(100% - 250rpx);
+	background-color: #f8fafc;
+	padding-left: 16rpx;
+	padding-right: 16rpx;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.wzy-subject-list .wzy-subject-item .wzy-subject-item-top{
+	font-size: 20rpx;
+	text-align: right;
+	padding: 10rpx;
+	color: #666;
+}
+.wzy-subject-list .wzy-subject-item .wzy-subject-item-top .wzy-subject-order-no{
+	font-weight: bold;
+	color: #54a58c;
+}

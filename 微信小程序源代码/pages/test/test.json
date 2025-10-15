@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "为之易心理-测评答题",
+  "usingComponents": {
+	  "t-icon": "tdesign-miniprogram/icon/icon",
+	  "t-row": "tdesign-miniprogram/row/row",
+    "t-col": "tdesign-miniprogram/col/col",
+    "t-tag": "tdesign-miniprogram/tag/tag",
+    "t-footer": "tdesign-miniprogram/footer/footer"
+  }
+}

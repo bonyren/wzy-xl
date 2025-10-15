@@ -1,0 +1,12 @@
+/* pages/category/category.wxss */
+.category-subjects-more {
+	padding: 20rpx;
+}
+
+.category-subjects-more button {
+	font-size: 28rpx;
+	height: 70rpx;
+	width: 100%;
+	background-color: #DCDCDC;
+	color: #499f84;
+}

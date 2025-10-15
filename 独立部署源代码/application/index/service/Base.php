@@ -1,0 +1,2 @@
+<?php
+ namespace app\index\service; class Base { protected function __construct() { } protected static $_instances = array(); public static function I() { goto hKf3e; hKf3e: $called_class = get_called_class(); goto SFDZP; ggEFk: ZIl4U: goto hZzAc; hZzAc: return self::$_instances[$called_class]; goto h5jLs; SFDZP: if (isset(self::$_instances[$called_class])) { goto ZIl4U; } goto Xd0ZX; Xd0ZX: self::$_instances[$called_class] = new $called_class(); goto ggEFk; h5jLs: } }

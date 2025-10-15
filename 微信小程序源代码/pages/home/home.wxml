@@ -1,0 +1,63 @@
+<view class="index-search-bar fixed-top">
+<image class="logo" mode="heightFix" src="/images/logo.png" />
+<text class="title">为之易心理测量</text>
+<t-search class="search" shape="round" maxlength="20" placeholder="量表关键词" bindsubmit="onSearchKw" bindclear="onSearchKwClear" />
+</view>
+<view class="index-page-body" hidden="{{!uiDataReady}}">
+  <view class="index-shortcut-container card">
+    <view wx:for="{{homeConfig.shortcuts}}" wx:key="id" data-category-id="{{item.category_id}}" data-url="{{item.url}}" bindtap="onShortcutClick">
+		<t-icon name="{{item.icon}}" size="48rpx" color="#499f84" />{{item.title}}
+	</view>
+  </view>
+	<view class="popular-section-title">热门测评</view>
+	<view class="popular-subject-section">
+		<view class="popular-subject-container">
+			<view wx:for="{{subjectsPopular}}" wx:key="id" class="popular-subject-box" data-subject-id="{{item.id}}" catchtap="onSubjectClick">
+				<view class="popular-subject-image">
+					<image mode="widthFix" lazy-load src="{{item.image_url}}" style="width: 100%;" />
+				</view>
+				<view class="popular-subject-title">
+					{{item.name}}
+				</view>
+				<view class="popular-subject-opt">
+					<view class="popular-subject-opt-label">
+						<text class="text-primary">{{item.participants}}</text>人已测
+					</view>
+					<view class="popular-subject-opt-btn">
+						<button type="default" size="mini">立即测量</button>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="popular-subject-switch">
+			<button type="default" bind:tap="onSubjectPopularSwitch">换一批</button>
+		</view>
+	</view>
+	<view class="popular-section-title">精选测评 
+		<view class="popular-section-refresh"><t-icon name="refresh" size="48rpx" color="#696969" bind:tap="onSubjectFeaturedRefresh" /></view>
+	</view>
+	<view class="featured-subject-list">
+		<view wx:for="{{subjectsFeatured}}" wx:key="id"
+			data-subject-id="{{item.id}}"
+			catchtap="onSubjectClick"
+			class="featured-subject-item">
+			<view class="featured-subject-image">
+				<image mode="widthFix" lazy-load src="{{item.image_url}}" style="width: 100%;" />
+			</view>
+			<view class="featured-subject-brief">
+				<view class="featured-subject-name">{{item.name}}</view>
+				<view class="featured-subject-subtitle">{{item.subtitle}}</view>
+				<view class="featured-subject-label">
+					<text wx:for="{{item.category_names}}" wx:key="*this">{{item}}</text>
+				</view>
+				<view class="featured-subject-text">
+					<view><text class="text-success">{{item.items}}</text>道题目</view>
+					<view><text class="text-primary">{{item.participants}}</text>人已测</view>
+				</view>
+				<view class="featured-subject-opt">
+					<button size="mini" type="default">查看详情</button>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@miniprogram-component-plus/tabs": "^1.0.0",
+    "tdesign-miniprogram": "^1.2.7"
+  }
+}

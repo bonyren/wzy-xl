@@ -1,0 +1,114 @@
+.detail_wrapper {
+	position: relative;
+	height: calc(100% - 132rpx);
+}
+
+.detail_wrapper .detail_body {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 8rpx;
+	height: 99%;
+	width: 96%;
+	margin: auto auto;
+}
+
+.detail_wrapper .detail_body .detail_image {
+	width: 100%;
+}
+
+.detail_wrapper .detail_body .detail_title {
+	text-align: center;
+	font-size: 38.4rpx;
+	font-weight: bold;
+	margin: 20rpx 20rpx;
+	color: #363636;
+}
+
+.detail_wrapper .detail_body .detail_subtitle {
+	text-align: center;
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #696969;
+	margin: 20rpx 20rpx;
+}
+
+.detail_wrapper .detail_body .detail_price {
+	text-align: center;
+	font-size: 38.4rpx;
+	font-weight: bold;
+	color: #F2836D;
+}
+
+.detail_wrapper .detail_body .detail_tags {
+	margin-top: 16rpx;
+}
+
+.detail_wrapper .detail_body .detail_tags .detail_tag {
+	margin: 16rpx;
+}
+
+.detail_wrapper .detail_body .detail_desc {
+	padding: 0rpx 16rpx;
+	font-size: 30rpx;
+	line-height: 50rpx;
+}
+
+.detail_wrapper .detail_body .section-title {
+	height: 36rpx;
+	line-height: 36rpx;
+	padding: 20rpx;
+	font-size: 32rpx;
+	background-color: #ddf1ea;
+	font-weight: bolder;
+	color: #666;
+	text-align: center;
+	margin: 16rpx 0rpx;
+	text-shadow: #FC0 1px 0 10px;
+}
+
+.detail_wrapper .detail_body .detail_team {
+	padding: 0rpx 16rpx;
+	font-size: 28rpx;
+	line-height: 50rpx;
+}
+
+.detail_footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #f8fafc;
+	padding: 16rpx 32rpx;
+	height: 100rpx;
+}
+
+.detail_footer .home {}
+
+.detail_footer .home button {
+	width: 100rpx;
+	font-size: 24rpx;
+	padding: 5rpx;
+	border: none;
+}
+.detail_footer .report button {
+	width: 120rpx;
+	font-size: 24rpx;
+	padding: 5rpx;
+	border: none;
+}
+.detail_footer .test {}
+
+.detail_footer .test button {
+	background-color: #54a58c;
+	color: #ffffff;
+	width: 350rpx;
+	border: none;
+	border-radius: 20rpx;
+}

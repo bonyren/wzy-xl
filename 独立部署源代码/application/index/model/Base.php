@@ -1,0 +1,2 @@
+<?php
+ namespace app\index\model; use think\Model; use think\Db; use think\Request; use app\index\service\RequestContext; use think\Log; class Base extends Model { protected function initialize() { parent::initialize(); } protected static function init() { goto ntWhs; AnTc7: R3_LN: goto arXb5; GkFCt: return; goto AnTc7; AQfjL: return; goto cafsl; ZfABl: if (!empty($model::$audit_fields)) { goto R3_LN; } goto GkFCt; ntWhs: $model = static::class; goto hCR32; hCR32: if (isset($model::$audit_fields)) { goto Q1IVw; } goto AQfjL; cafsl: Q1IVw: goto ZfABl; arXb5: } }

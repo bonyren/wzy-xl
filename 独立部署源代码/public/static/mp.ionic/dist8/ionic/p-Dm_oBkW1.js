@@ -1,0 +1,4 @@
+/*!
+ * (C) Ionic http://ionicframework.com - MIT License
+ */
+import{w as t}from"./p-ZjP4CjeZ.js";import{r as o}from"./p-C-Cct-6D.js";const r=(r,e,i)=>{let n;const s=()=>void 0!==e()&&void 0===r.label&&null!==i(),d=()=>{const o=e();if(void 0===o)return;if(!s())return void o.style.removeProperty("width");const c=i().scrollWidth;if(0===c&&null===o.offsetParent&&void 0!==t&&"IntersectionObserver"in t){if(void 0!==n)return;const t=n=new IntersectionObserver((o=>{1===o[0].intersectionRatio&&(d(),t.disconnect(),n=void 0)}),{threshold:.01,root:r});t.observe(o)}else o.style.setProperty("width",.75*c+"px")};return{calculateNotchWidth:()=>{s()&&o((()=>{d()}))},destroy:()=>{n&&(n.disconnect(),n=void 0)}}};export{r as c}

@@ -1,0 +1,10 @@
+<view class="container" hidden="{{!uiDataReady}}">
+    <view style="margin: 0px auto">
+        <view class="h2 text-center price-amount">{{'¥' + orderAmount}}</view>
+        <button class="action-btn" type="primary" bindtap="onPay">支付查看测评报告</button>
+    </view>
+    <view>
+				<button type="primary" plain bind:tap="onAuthorizeCode">我有授权码</button>
+        <button type="default" bind:tap="onHome" style="margin-top: 30rpx;">返回首页</button>
+    </view>
+</view>

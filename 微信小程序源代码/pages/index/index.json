@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "为之易心理测量-分类",
+  "usingComponents": {
+    "t-search": "tdesign-miniprogram/search/search"
+  }
+}

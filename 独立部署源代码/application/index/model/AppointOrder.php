@@ -1,0 +1,2 @@
+<?php
+ namespace app\index\model; use think\Model; class AppointOrder extends Base { protected $table = "\145\x78\160\x65\x72\x74\137\x6f\162\144\145\x72"; protected $pk = "\157\162\144\x65\x72\137\x6e\157"; protected static $audit_fields = array("\x6f\162\144\x65\162\x5f\156\157" => "\351\xa2\204\xe7\272\246\xe8\256\xa2\345\215\225\345\x8f\267"); protected static $audit_field_translates = array(); }

@@ -1,0 +1,48 @@
+<view class="my-order" hidden="{{!uiDataReady}}">
+    <view class="my-order-top">
+        <view class="my-order-user">
+			<button class="avatar" open-type="chooseAvatar" bindchooseavatar="bindchooseavatar">
+				<t-avatar shape="circle" image="{{headimgUrl}}" size="medium" />
+			</button>
+			<view class="nickname">
+				{{nickName}}
+			</view>
+			<button class="exit-btn" type="default" size="mini" bind:tap="onExit">退出</button>
+        </view>
+        <t-tabs class="my-order-tabs" theme="tag" value="{{currentTab}}" bind:change="onTabChange" bind:click="onClickTab">
+            <t-tab-panel wx:for="{{tabs}}" wx:key="*this" label="{{item}}" value="{{index}}" />
+        </t-tabs>
+    </view>
+    <scroll-view class="my-subject-container" scroll-y>
+        <view class="wzy-subject-list">
+            <view wx:for="{{currentOrders}}" wx:key="order_no" class="wzy-subject-item">
+                <view class="wzy-subject-item-top">
+                订单编号 <text class="wzy-subject-order-no">{{item.order_no}}</text>
+                </view>
+                <view class="wzy-subject-brief">
+                    <view class="wzy-subject-left">
+                        <image mode="widthFix" lazy-load src="{{item.image_url}}" style="width: 100%;" />
+                    </view>
+                    <view class="wzy-subject-right">
+                        <view class="wzy-subject-name">{{item.subject_name}}</view>
+                        <view class="wzy-subject-subtitle">{{item.subject_subtitle}}</view>
+                        <view class="wzy-subject-label">
+                            测量时间 <text>{{item.order_time}}</text>
+                        </view>
+                        <view class="wzy-subject-text">
+                            <view><text class="text-success">{{item.total_items}}</text> 道题目</view>
+                            <view><text class="text-primary">{{item.test_items}}</text> 题目已测</view>
+                        </view>
+                        <view class="uni-my-5">
+                            <progress hidden="{{currentTab!=0}}" percent="{{item.progress_percent}}" stroke-width="10" />
+                        </view>
+                    </view>
+                </view>
+                <view class="wzy-subject-opt">
+                    <button size="mini" type="default" hidden="{{currentTab!=0}}" data-subject-id="{{item.subject_id}}" data-order-no="{{item.order_no}}" bind:tap="onContinueTest">继续测评</button>
+                    <button size="mini" type="default" hidden="{{currentTab!=1}}" data-order-no="{{item.order_no}}" bind:tap="onTestReport">测评报告</button>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

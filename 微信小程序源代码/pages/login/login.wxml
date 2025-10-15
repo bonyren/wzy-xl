@@ -1,0 +1,8 @@
+<view class="container">
+    <view>
+        <button class="action-btn" bindtap="onLogin">登录用户</button>
+    </view>
+    <view>
+        <button type="default" bind:tap="onHome">返回首页</button>
+    </view>
+</view>

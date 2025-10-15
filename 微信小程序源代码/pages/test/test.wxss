@@ -1,0 +1,167 @@
+.test_page{
+	padding: 16rpx;
+}
+.test_box {
+}
+.test_box .test_header{
+
+}
+.test_box .test_header .test_box_title{
+	width: 100%;
+	background-color: rgba(153, 153, 153, 0.1);
+	font-size: 32rpx;
+	text-align: center;
+	color: #222428;
+    word-break: break-all;
+	white-space: normal;
+	word-wrap: break-all;
+	padding: 16rpx 0rpx;
+	border-bottom: 1px solid #e5e5e5;
+}
+.test_box .test_header .test_box_head {
+	font-size: 19.2rpx;
+	color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.test_box .test_header .test_box_head .test_box_head_label {
+	line-height: 48rpx;
+	margin-left: 16rpx;
+	color: #333333;
+	font-size: 24rpx;
+}
+
+.test_box .test_header .test_box_head .test_box_head_progress {
+	height: 70.4rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.test_box .test_header .test_box_head .test_box_head_progress .test_box_head_progress_label {
+	width: 192rpx;
+	overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+	height: 100%;
+	line-height: 70.4rpx;
+}
+
+.test_box .test_header .test_box_head .test_box_head_progress .test_box_head_progress_bar {
+	width: calc(100% - 220rpx);
+	padding-right: 32rpx;
+}
+.test_box .test_header .test_box_head .current {
+	font-size: 56rpx;
+	margin-left: 16rpx;
+	color: #009966;
+}
+.test_box .test_header .test_box_head .total {
+  color: #333333;
+  font-size: 32rpx;
+}
+
+.test_box .test_header .test_box_content {
+  position: relative;
+	padding: 16rpx;
+	border-radius: 0 0 6.4rpx 6.4rpx;
+}
+
+.test_box .test_header .test_box_content .type {
+	margin: 16rpx 0rpx 16rpx 0rpx;
+	height: 32rpx;
+	line-height: 32rpx;
+	font-size: 25.6rpx;
+	font-weight: bold;
+}
+.test_box .test_header .test_box_content .title {
+	line-height: 48rpx;
+	font-size: 32rpx;
+	font-weight: 600;
+	color: #333;
+	margin-top: 16rpx;
+	margin-bottom: 32rpx;
+	background-color: #C6E6E6;
+	padding:25.6rpx;
+	box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.075) !important;
+	word-break: break-all;
+	white-space: normal;
+	word-wrap: break-all;
+}
+.test_box .test_body{
+  position: relative;
+}
+.test_box .test_body .test_option_container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.test_box .test_body .input_box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 28rpx;
+	color: #333;
+	border: 1px solid #ddd;
+	border-radius: 10rpx;
+	margin: 0rpx 10rpx 30rpx 10rpx;
+	background-color: #fff;
+	box-shadow:0.1rem 0.1rem 0 #fff2c3, 0.1rem 0.1rem 0 0.01333rem #131415;
+	min-height: 90rpx;
+}
+.test_box .test_body .input_box::before{
+	content: '';
+	width: 2%;
+	height: 60%;
+	background-color: #C6E6E6;
+	z-index: 7;
+	margin: 10rpx;
+}
+.test_box .test_body .input_box .input_box_content {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	width: calc(98% - 52rpx);
+	padding: 16rpx;
+}
+
+.test_box .test_body .input_box radio,
+.test_box .test_body .input_box checkbox{
+	width: 0;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.test_box .test_body .input_box.checked{
+	background-color: #c0c0c0;
+	box-shadow: .10667rem .10667rem 0 #2dd36f,.10667rem .10667rem 0 .01333rem #131415;
+}
+.test_box .test_body .textarea_box{
+  padding: 16rpx;
+}
+.test_footer{
+	background-color: #f8fafc;
+	padding: 16rpx 32rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.test_footer .prev button {
+	background-color: #fc8500;
+	color: #ffffff;
+	width: 200rpx;
+	border: none;
+	border-radius: 20rpx;
+	font-size: 32rpx;
+}
+.test_footer .next button {
+	background-color: #54a58c;
+	color: #ffffff;
+	width: 300rpx;
+	border: none;
+	border-radius: 20rpx;
+	font-size: 32rpx;
+}

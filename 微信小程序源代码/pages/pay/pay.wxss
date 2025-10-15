@@ -1,0 +1,4 @@
+/* pages/pay/pay.wxss */
+.price-amount{
+  color: #000;
+}

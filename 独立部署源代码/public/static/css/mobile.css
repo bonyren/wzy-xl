@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+.l-btn-icon{color: #104E8B;}
+.messager-button .l-btn+.l-btn{margin-left:1rem}
+.accordion{border:none}

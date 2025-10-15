@@ -1,0 +1,269 @@
+/* tabbar end */
+:root {
+	--ion-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--ion-color-sky: #99CCFF;
+	--ion-color-sky-rgb: 153,204,255;
+	--ion-color-sky-contrast: #000000;
+	--ion-color-sky-contrast-rgb: 0,0,0;
+	--ion-color-sky-shade: #87b4e0;
+	--ion-color-sky-tint: #a3d1ff;
+
+  	--ion-color-lavender: #97B3FD;
+	--ion-color-lavender-rgb: 151,179,253;
+	--ion-color-lavender-contrast: #000000;
+	--ion-color-lavender-contrast-rgb: 0,0,0;
+	--ion-color-lavender-shade: #859edf;
+	--ion-color-lavender-tint: #a1bbfd;
+
+	--ion-color-bg: #f8fafc;
+	--ion-color-bg-rgb: 248,250,252;
+	--ion-color-bg-contrast: #000000;
+	--ion-color-bg-contrast-rgb: 0,0,0;
+	--ion-color-bg-shade: #dadcde;
+	--ion-color-bg-tint: #f9fbfc;
+
+	--ion-color-action: #54a58c;
+	--ion-color-action-rgb: 84,165,140;
+	--ion-color-action-contrast: #ffffff;
+	--ion-color-action-contrast-rgb: 0,0,0;
+	--ion-color-action-shade: #4a917b;
+	--ion-color-action-tint: #65ae98;
+
+	--ion-color-section: #ddf1ea;
+	--ion-color-section-rgb: 221,241,234;
+	--ion-color-section-contrast: #000000;
+	--ion-color-section-contrast-rgb: 0,0,0;
+	--ion-color-section-shade: #c2d4ce;
+	--ion-color-section-tint: #e0f2ec;
+}
+.ion-color-sky {
+	--ion-color-base: var(--ion-color-sky);
+	--ion-color-base-rgb: var(--ion-color-sky-rgb);
+	--ion-color-contrast: var(--ion-color-sky-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-sky-contrast-rgb);
+	--ion-color-shade: var(--ion-color-sky-shade);
+	--ion-color-tint: var(--ion-color-sky-tint);
+}
+.ion-color-lavender {
+	--ion-color-base: var(--ion-color-lavender);
+	--ion-color-base-rgb: var(--ion-color-lavender-rgb);
+	--ion-color-contrast: var(--ion-color-lavender-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-lavender-contrast-rgb);
+	--ion-color-shade: var(--ion-color-lavender-shade);
+	--ion-color-tint: var(--ion-color-lavender-tint);
+}
+.ion-color-bg {
+	--ion-color-base: var(--ion-color-bg);
+	--ion-color-base-rgb: var(--ion-color-bg-rgb);
+	--ion-color-contrast: var(--ion-color-bg-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-bg-contrast-rgb);
+	--ion-color-shade: var(--ion-color-bg-shade);
+	--ion-color-tint: var(--ion-color-bg-tint);
+}
+.ion-color-action {
+	--ion-color-base: var(--ion-color-action);
+	--ion-color-base-rgb: var(--ion-color-action-rgb);
+	--ion-color-contrast: var(--ion-color-action-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-action-contrast-rgb);
+	--ion-color-shade: var(--ion-color-action-shade);
+	--ion-color-tint: var(--ion-color-action-tint);
+}
+.ion-color-section {
+	--ion-color-base: var(--ion-color-section);
+	--ion-color-base-rgb: var(--ion-color-section-rgb);
+	--ion-color-contrast: var(--ion-color-section-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-section-contrast-rgb);
+	--ion-color-shade: var(--ion-color-section-shade);
+	--ion-color-tint: var(--ion-color-section-tint);
+}
+ion-segment-button::part(indicator-background) {
+	background: #54a58c;
+}
+
+/* Material Design styles */
+ion-segment-button.md::part(native) {
+	color: #000;
+}
+
+.segment-button-checked.md::part(native) {
+	color: #54a58c;
+}
+
+ion-segment-button.md::part(indicator-background) {
+	height: 4px;
+}
+
+/* iOS styles */
+ion-segment-button.ios::part(native) {
+	color: #54a58c;
+}
+
+.segment-button-checked.ios::part(native) {
+	color: #fff;
+}
+
+ion-segment-button.ios::part(indicator-background) {
+	border-radius: 20px;
+}
+
+.text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-wrap {
+  white-space: normal !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-blue{
+	color: #007bff;
+}
+.text-orange{
+	color: #fd7e14;
+}
+.img-thumbnail {
+/*
+  padding: 0.25rem;
+*/
+  padding: 0.15rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.border {
+  border: 1px solid #dee2e6 !important;
+}
+
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.border-right {
+  border-right: 1px solid #dee2e6 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.border-left {
+  border-left: 1px solid #dee2e6 !important;
+}
+.hide {
+	display: none;
+}
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  background: #fff;
+  opacity: 1;
+  filter: Alpha(opacity=60);
+  z-index: 9999
+}
+
+#loader {
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: yellow;
+
+	-webkit-animation: spin 1.5s infinite;
+	animation: spin 1.5s infinite;
+}
+
+#loader::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left:5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: orange;
+	-webkit-animation: spin 1.5s infinite;
+	animation: spin 1.5s infinite;
+}
+
+#loader::after {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left:15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: red;
+	-webkit-animation: spin 1.5s infinite;
+	animation: spin 1.5s infinite;
+}
+@-webkit-keyframes spin {
+	0%   {-webkit-transform: rotate(0deg);}
+
+	100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+	0%   {transform: rotate(0deg);}
+
+	100% {transform: rotate(360deg);}
+}
+
+ion-card ion-card-content ul,ion-card-content ol{
+	padding-left: 1rem;
+}
+ion-card ion-card-content ul li{
+	list-style-type: disc;
+}
+ion-card ion-card-content ol li{
+	list-style-type: decimal;
+}
+ion-card ion-card-title, ion-card ion-card-subtitle {
+	text-align: center;
+}
+.alert-sub-title{
+	font-size: 0.8rem !important;
+	line-height:1.2rem !important;
+}

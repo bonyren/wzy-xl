@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+article,aside,blockquote,body,button,code,dd,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+	background-color: #f5f5f5;
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	outline: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption,th {
+	text-align: left;
+}
+
+fieldset,img {
+	border: 0;
+}
+
+li {
+	list-style: none;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+button,input,optgroup,option,select,textarea {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	outline: 0;
+}
+
+button {
+	-webkit-appearance: none;
+	border: 0;
+	background: 0 0;
+}
+
+a {
+	-webkit-touch-callout: none;
+	text-decoration: none;
+	color: #000000;
+}
+
+:focus {
+	outline: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-input-placeholder {
+	color: #bbb;
+}
+
+em,i {
+	font-style: normal;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+}
+
+input,textarea {
+	outline: none;
+	border: 0;
+}
+
+input[type="password" i] {
+	-webkit-text-security: disc; 
+}
+
+textarea {
+	resize: none;
+	overflow: auto;
+}
+
+header,footer,article,aside,section,nav,menu,hgroup,details,dialog,figure,figcaption {
+	display: block;
+}
+

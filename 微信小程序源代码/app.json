@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/my/my",
+    "pages/test/test",
+    "pages/pay/pay",
+    "pages/login/login",
+    "pages/report/report",
+    "pages/category/category"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "为之易专业心理测量平台",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/tabbar_home.png",
+        "selectedIconPath": "images/tabbar_home_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "分类",
+        "iconPath": "images/tabbar_category.png",
+        "selectedIconPath": "images/tabbar_category_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/tabbar_my.png",
+        "selectedIconPath": "images/tabbar_my_active.png"
+      }
+    ],
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

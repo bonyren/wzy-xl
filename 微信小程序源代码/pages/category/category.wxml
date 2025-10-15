@@ -1,0 +1,33 @@
+<view class="wzy-subject-list">
+	<view wx:for="{{subjects}}" wx:key="id"
+		data-subject-id="{{item.id}}"
+		catchtap="onSubjectClick"
+		class="wzy-subject-item">
+		<view class="wzy-subject-brief">
+			<view class="wzy-subject-left">
+				<image mode="widthFix" lazy-load src="{{item.image_url}}" style="width: 100%;" />
+			</view>
+			<view class="wzy-subject-right">
+				<view class="wzy-subject-name">{{item.name}}</view>
+				<view class="wzy-subject-subtitle">{{item.subtitle}}</view>
+				<view class="wzy-subject-label">
+					<text wx:for="{{item.category_names}}" wx:key="*this">{{item}}</text>
+				</view>
+				<view class="wzy-subject-price">
+					<text wx:if="{{item.current_price==0}}" class="badge badge-success">免费</text>
+					<text wx:if="{{item.current_price!=0}}">¥ {{item.current_price}}</text>
+				</view>
+				<view class="wzy-subject-text">
+					<view><text class="text-success">{{item.items}}</text>道题目</view>
+					<view><text class="text-primary">{{item.participants}}</text>人已测</view>
+				</view>
+			</view>
+		</view>
+		<view class="wzy-subject-opt">
+			<button size="mini" type="default">查看详情</button>
+		</view>
+	</view>
+</view>
+<view class="category-subjects-more">
+	<button type="default" bind:tap="onMoreSubjects">更多测评</button>
+</view>

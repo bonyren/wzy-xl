@@ -1,0 +1,1 @@
+<div class="alert alert-danger m-5" role="alert"><?=$msg??'系统错误，请联系技术支持wzycoding@qq.com'?></div>

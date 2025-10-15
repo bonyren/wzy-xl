@@ -1,0 +1,1 @@
+<div id="expertScheduleContainer" class="easyui-panel" data-options="fit:true,border:false,href:'<?=url('index/Expert/schedule', ['expertId'=>$expertId])?>'"></div>

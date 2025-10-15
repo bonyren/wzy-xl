@@ -1,0 +1,3 @@
+<view>
+    <web-view src="{{reportUrl}}" hidden="{{!uiDataReady}}"></web-view>
+</view>

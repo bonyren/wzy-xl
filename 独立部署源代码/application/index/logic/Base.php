@@ -1,0 +1,2 @@
+<?php
+ namespace app\index\logic; class Base { protected function __construct() { } protected static $_instances = array(); public static function I() { goto xxDDA; xxDDA: $called_class = get_called_class(); goto vwr52; tKh92: self::$_instances[$called_class] = new $called_class(); goto WbCI9; vwr52: if (isset(self::$_instances[$called_class])) { goto N7h7p; } goto tKh92; T15yV: return self::$_instances[$called_class]; goto M5fiB; WbCI9: N7h7p: goto T15yV; M5fiB: } public static function newObj() { $logicClass = static::class; return new $logicClass(); } }

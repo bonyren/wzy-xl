@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "为之易心理测量-我的",
+  "usingComponents": {
+    "t-tabs": "tdesign-miniprogram/tabs/tabs",
+    "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
+    "t-avatar": "tdesign-miniprogram/avatar/avatar"
+  }
+}

@@ -1,0 +1,97 @@
+<view class="test_page" hidden="{{!uiDataReady}}">
+  <view class="card test_box">
+    <view class="test_header">
+      <view class="test_box_head">
+        <view class="test_box_head_label">{{subject.name}}</view>
+        <view class="test_box_head_progress">
+          <view class="test_box_head_progress_label">
+            <text class="current">{{test.curIndex}}</text>
+            <text class="total">/{{order.total_items}}</text>
+          </view>
+          <view class="test_box_head_progress_bar">
+            <progress percent="{{test.curPercent}}" stroke-width="10" />
+          </view>
+        </view>
+      </view>
+      <view class="test_box_content">
+        <view class="title">
+          <t-row>
+            <t-col span="{{test.curItem.item_2?12:24}}">
+              <rich-text nodes="{{test.curItem.item}}"></rich-text>
+              <view>
+                <image wx:if="{{test.curItem.image}}" src="{{test.curItem.image}}" mode="aspectFit" style="width:400rpx;height: 300rpx;"></image>
+              </view>
+            </t-col>
+            <t-col span="12" wx:if="{{test.curItem.item_2}}">
+              <rich-text nodes="{{test.curItem.item_2}}"></rich-text>
+            </t-col>
+          </t-row>
+        </view>
+        <t-tag class="margin-16" variant="outline" theme="primary" shape="round">
+          <text wx:if="{{test.curItem.type == 1}}">单选</text>
+          <text wx:if="{{test.curItem.type == 2}}">多选</text>
+          <text wx:if="{{test.curItem.type == 3}}">填写</text>
+        </t-tag>
+      </view>
+    </view>
+    <view class="test_body">
+      <!--单选-->
+      <view wx:if="{{test.curItem.type == 1}}">
+        <radio-group bindchange="onTestItemOptionChange">
+          <view class="test_option_container">
+            <label class="input_box {{item.checked?'checked':''}}" data-option-id="{{item.value}}" wx:for="{{test.curItemOptions}}" wx:key="value" style="width:{{optionColSpan}}%;">
+              <view class="input_box_content">
+                <view>
+                  <rich-text nodes="{{item.text}}"></rich-text>
+                  <image wx:if="{{item.image}}" src="{{item.image}}" mode="aspectFit" style="width:200rpx;height: 100rpx;"></image>
+                </view>
+                <radio value="{{item.value}}" checked="{{test.curItem.value == item.value}}" />
+                <view wx:if="{{optionColSpan>20}}">
+                  <t-icon name="{{item.checked?'check-circle':'circle'}}" size="20"></t-icon>
+                </view>
+              </view>
+            </label>
+          </view>
+        </radio-group>
+      </view>
+      <!--多选-->
+      <view wx:if="{{test.curItem.type == 2}}">
+        <checkbox-group bindchange="onTestItemOptionsChange">
+          <view class="test_option_container">
+            <label class="input_box {{item.checked?'checked':''}}" wx:for="{{test.curItemOptions}}" wx:key="value" style="width:{{optionColSpan}}%;">
+              <view class="input_box_content">
+                <view>
+                  <rich-text nodes="{{item.text}}"></rich-text>
+                </view>
+                <checkbox value="{{item.value}}" checked="{{item.checked}}" />
+                <view wx:if="{{optionColSpan>20}}">
+                  <t-icon name="{{item.checked?'check-rectangle':'rectangle'}}" size="20"></t-icon>
+                </view>
+              </view>
+            </label>
+          </view>
+        </checkbox-group>
+      </view>
+      <!--填写-->
+      <view wx:if="{{test.curItem.type == 3}}" class="textarea_box">
+        <input wx:if="{{test.curItem.tag == 'age'}}" maxlength="6" type="number" placeholder="请输入数字，例如：10" focus value="{{test.curItem.value}}" bindinput="onTextAreaChange" bindconfirm="onTextAreaChange" style="border:1px solid #ddd;width:100%;height:30px;" />
+        <textarea wx:if="{{test.curItem.tag == 'none'}}" maxlength="100" focus value="{{test.curItem.value}}" bindinput="onTextAreaChange" bindconfirm="onTextAreaChange" style="border:1px solid #ddd;border-radius:5px;width:100%;height:100px;" />
+      </view>
+    </view>
+
+    <view class="test_footer">
+      <view class="prev">
+        <button hidden="{{test.curIndex == 1 || subject.test_allow_back == 0}}" class="action-btn" type="primary" bindtap="prevQuestion">
+          上一题
+        </button>
+      </view>
+      <view class="next">
+        <!--多选或者填充的情况下出现-->
+        <button hidden="{{test.curItem.type == 1}}" class="action-btn" type="primary" bindtap="nextQuestion">
+          提交并下一题
+        </button>
+      </view>
+    </view>
+  </view>
+</view>
+<t-footer text="{{footerText}}"></t-footer>
