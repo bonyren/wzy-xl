@@ -29,21 +29,23 @@
 2. 工作室用户使用的客户服务端。通过手机端微信访问，管理员可以将工作室链接配置到其微信公众号上，或者提供相关二维码给用户扫码。用户在手机端进行量表测评答题，测评报告查看，普查活动执行，咨询专家预约等操作。 
 
 ### 管理员端预览
-![管理员端预览](https://foruda.gitee.com/images/1693447256478945071/b25d740b_10482337.png "管理员端预览")
+![管理员端预览](https://github.com/user-attachments/assets/4ce1a646-2016-4bd1-9edf-ae4e7d844f93 "管理员端预览")
+
 
 ### 移动端扫码体验
-![微信公众号H5体验](https://foruda.gitee.com/images/1760521133984071374/b8cfb1da_10482337.png "微信公众号H5.png")
-![微信小程序体验](https://foruda.gitee.com/images/1760521166506071947/2cc8d1cb_10482337.png "微信小程序二维码.png")
-![百度小程序体验](https://foruda.gitee.com/images/1760521184345853526/669e132f_10482337.png "百度小程序二维码.png")
+![微信公众号H5体验](https://github.com/user-attachments/assets/e2cdf1bd-a482-4d22-bcb2-d6df2e19604f "微信公众号H5.png")
+![微信小程序体验](https://github.com/user-attachments/assets/5fbed27b-9b1f-4b4a-8025-b60d663e11e0 "微信小程序二维码.png")
+![百度小程序体验](https://github.com/user-attachments/assets/cf7225e8-423e-4f5a-b639-3b5ac561e282 "百度小程序二维码.png")
+
 ### 用户移动端预览
 #### 移动端咨询室首页
-![移动端咨询室首页](https://foruda.gitee.com/images/1720001351662927242/ce4b4d83_10482337.jpeg "移动端咨询室首页")
+![移动端咨询室首页](https://github.com/user-attachments/assets/f8970821-9a7f-4e9a-9e73-79e4fdb53e4c "移动端咨询室首页")
 #### 移动端量表列表
-![移动端量表列表](https://foruda.gitee.com/images/1720001377623956956/509eeb5f_10482337.jpeg "移动端量表列表")
+![移动端量表列表](https://github.com/user-attachments/assets/a9cd09d1-dc04-445f-a60e-7c19f6cb7b44 "移动端量表列表")
 #### 移动端量表详情
-![移动端量表详情](https://foruda.gitee.com/images/1720001723094955088/18a93dcd_10482337.jpeg "移动端量表详情")
+![移动端量表详情](https://github.com/user-attachments/assets/3d379a43-9dc5-4f05-809c-fb98a1885193 "移动端量表详情")
 #### 移动端咨询专家列表
-![移动端咨询专家列表](https://foruda.gitee.com/images/1720001399166006339/358d37e1_10482337.jpeg "移动端咨询专家列表")
+![移动端咨询专家列表](https://github.com/user-attachments/assets/994d95ac-a3b9-4d6b-b9f4-9499ca2fc1ca "移动端咨询专家列表")
 
 ### 系统的主要功能
 -  **心理量表测评** 。系统含有专业的量表池，可以直接从其导入量表到自己账号使用；同时系统还拥有全要素的量表编辑器，管理员既可以在导入量表的基础上对其自定义调整，也可以从头 添加自己的专属量表。
@@ -51,25 +53,30 @@
 -  **咨询业务管理** 。系统可以对咨询专家的心理咨询服务进行统一化、规范化管理。包括专家的个人信息，时间排期，预约流程，服务跟踪等系列功能。
 
 ### 量表功能概览
-![量表列表](https://foruda.gitee.com/images/1693447756238517518/8ac5d48b_10482337.png "量表列表")![导入量表](https://foruda.gitee.com/images/1693447769115934357/5f56558f_10482337.png "导入量表")
+![量表列表](https://github.com/user-attachments/assets/b5ebdfd9-b4de-411b-8f74-8f12bb45c832 "量表列表")
+![导入量表](https://github.com/user-attachments/assets/63b027b5-5602-467d-8d67-0b6def265c59 "导入量表")
 
 ### 普查功能概览
-![普查列表](https://foruda.gitee.com/images/1693447873510001409/76ea858a_10482337.png "普查列表")![普查创建](https://foruda.gitee.com/images/1693447883978902606/06ee44d9_10482337.png "普查创建")
+![普查列表](https://github.com/user-attachments/assets/d0ef3809-6c25-4f80-bfce-e8f3acf56970 "普查列表")
+![普查创建](https://github.com/user-attachments/assets/84d8b399-9aa0-4eb0-a5be-f232d16e06f8 "普查创建")
 
 ### 专家功能概览
-![专家列表](https://foruda.gitee.com/images/1693447941850081374/18059fe8_10482337.png "专家列表")![专家创建](https://foruda.gitee.com/images/1693447953768052797/ce17a95f_10482337.png "专家创建")
+![专家列表](https://github.com/user-attachments/assets/26a23105-cec9-493d-bac3-b84496ebed3d "专家列表")
+![专家创建](https://github.com/user-attachments/assets/c81acab9-36aa-4e7b-9ce5-c91350a211b8 "专家创建")
 
 ### 用户移动端概览
 #### 量表测评答题
-![量表测评答题](https://foruda.gitee.com/images/1720001443429825545/dd154958_10482337.jpeg "量表测评答题")
+![量表测评答题](https://github.com/user-attachments/assets/b10879f8-05bf-4a71-9376-da02a9058b59 "量表测评答题")
+
 #### 量表测评报告查看
-![量表测评报告查看](https://foruda.gitee.com/images/1720001482103621283/a657f391_10482337.jpeg "量表测评报告查看")
+![量表测评报告查看](https://github.com/user-attachments/assets/73a992cc-5749-4198-aa6e-291345276415 "量表测评报告查看")
+
 #### 专家咨询预约
-![专家咨询预约](https://foruda.gitee.com/images/1720001508298223368/74dcffcf_10482337.jpeg "专家咨询预约")
+![专家咨询预约](https://github.com/user-attachments/assets/a151f19d-df4f-4fc6-982e-92e2a1fcc61d "专家咨询预约")
 
 ### 系统访问
 系统访问入口 [https://www.wzyer.com](http://www.wzyer.com)
-![为之易心理咨询师登录](https://foruda.gitee.com/images/1693448141211329353/47c5ea57_10482337.png "为之易心理咨询师登录")
+![为之易心理咨询师登录](https://github.com/user-attachments/assets/8ff3d15d-ff47-4348-a539-9ac13ceb3f60 "为之易心理咨询师登录")
 
 ### 系统支持
 [wzycoding@qq.com](mailto://wzycoding@qq.com)
