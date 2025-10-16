@@ -348,6 +348,7 @@ use app\index\logic\Defs as IndexDefs;
                 title: '编辑输入域控件',
                 width: <?=$loginMobile?"'100%'":600?>,
                 height: '60%',
+				href:null,
                 content: editContent,
                 modal: true,
                 cache:false,
